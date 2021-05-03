@@ -68,7 +68,7 @@ btn1.onclick = () => {
     points = GenerateCurvePoints_Adaptive(t => t * Math.cos(t), t => t * Math.sin(t), -10, 10, 0.5, 0.5);
     drawPoints(ctx1, points, 20, 20);
     V = [];
-  };
+};
   
 btn2.onclick = () => {
     points = GenerateCurvePoints_Adaptive(t => 3 * Math.cos(t) + Math.cos(3 * t), t => 3 * Math.sin(t) - Math.sin(3 * t), -10, 10, 0.5, 0.5);

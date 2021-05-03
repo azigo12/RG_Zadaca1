@@ -17,7 +17,7 @@ function ConvexHull_GrahamScan(P) {
         }
     }
 
-    while(P.length > k)
+    while(P.length > k + 1)
         P.pop();
 
     return P;
@@ -34,7 +34,7 @@ function SortPointsByAngle(P) {
       var d = S[1] - Q[1];
       var e = a * d - b * c;
       if (e != 0) return e > 0 ? 1 : -1;
-      return a * a + b * b - c * c + d * d ? 1 : -1;
+      return a * a + b * b < c * c + d * d ? 1 : -1;
     });
     return P;
 }

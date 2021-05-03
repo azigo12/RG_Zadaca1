@@ -75,7 +75,6 @@ function drawPoints() {
       ctx.arc(generatedPoints[i][0], generatedPoints[i][1], 3, 0, 2 * Math.PI);
       ctx.fill();
     }
-    ctx.stroke();
 }
 
 function drawLines(P) {
